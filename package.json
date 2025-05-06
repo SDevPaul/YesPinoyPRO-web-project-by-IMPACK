@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build:global": "sass frontend/styles/global.scss frontend/dist/global.css",
+    "build:home": "sass frontend/pages/home-01/home-01.scss frontend/dist/home-01.css",
+    "build:about": "sass frontend/pages/about-02/about-02.scss frontend/dist/about-02.css",
+    "build:business": "sass frontend/pages/business-03/business-03.scss frontend/dist/business-03.css",
+    "build:tour": "sass frontend/pages/tour-04/tour-04.scss frontend/dist/tour-04.css",
+    "build:marketting": "sass frontend/pages/marketting-05/marketting-05.scss frontend/dist/marketting-05.css",
+    "build:news": "sass frontend/pages/news-blog-06/news-blog-06.scss frontend/dist/news-blog-06.css",
+    "build:contact": "sass frontend/pages/contact-07/contact-07.scss frontend/dist/contact-07.css",
+    "build:all": "npm run build:global && npm run build:home && npm run build:about && npm run build:business && npm run build:tour && npm run build:marketting && npm run build:news && npm run build:contact"
+  }
+}
