@@ -1,5 +1,5 @@
-@import "global_partials/_reset";
-@import "global_partials/_variables";
-@import "global_partials/_layout";
-@import "global_partials/_components";
-@import "global_partials/_typography";
+@use "global-partials/accordion";
+@use "global-partials/components";
+@use "global-partials/layout";
+@use "global-partials/typography";
+@use "global-partials/variables";
