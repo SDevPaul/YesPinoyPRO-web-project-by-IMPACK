@@ -1,1 +1,112 @@
-/* Components styles */
+@use 'variables';
+
+/* -----------------------------------
+   BASE BUTTON STYLES
+----------------------------------- */
+.button, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: $font-family;
+  font-weight: $font-medium;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1.5px solid transparent;
+}
+
+/* -----------------------------------
+    PRIMARY FILLED 1ST
+----------------------------------- */
+.btn-primary {
+  background-color: $brand-blue;
+  color: $brand-white;
+    
+  :hover {
+    background-color: $brand-white;
+    color: $brand-blue;
+  }
+}
+
+
+/* -----------------------------------
+    PRIMARY FILLED 2ND
+----------------------------------- */
+.btn-primary {
+  background-color: $brand-white;
+  color: $brand-blue;
+
+  :hover {
+    background-color: $brand-blue;
+    color: $brand-white;
+  }
+}
+
+
+/* -----------------------------------
+    SECONDARY BUTTON
+----------------------------------- */
+.btn-secondary {
+  background-color: $brand-white;
+  color: $brand-blue;
+  border: 1.5px solid $brand-blue;
+  :hover {
+    color: darken($brand-blue, 10%); // Make it slightly darker on hover
+  }
+}
+
+/* -----------------------------------
+    DANGER BUTTON
+----------------------------------- */
+.btn-danger {
+  background-color: $danger-bg;
+  color: $brand-white;
+  border: 1.5px solid $danger-bg;
+  :hover {
+    background-color: $danger-subdued;
+    color: $danger-bg;
+  }
+}
+
+/* -----------------------------------
+    SUCCESS BUTTON
+----------------------------------- */
+.btn-success {
+  background-color: $success-bg;
+  color: $brand-white;
+  border: 1.5px solid $success-bg;
+  :hover {
+    background-color: $success-subdued;
+    color: $success-bg;
+  }
+}
+
+/* -----------------------------------
+    WARNING BUTTON
+----------------------------------- */
+.btn-warning {
+  background-color: $warning-bg;
+  color: $brand-black;
+  border: 1.5px solid $warning-bg;
+  :hover {
+    background-color: $warning-subdued;
+    color: $warning-bg;
+  }
+}
+
+/* -----------------------------------
+    DISABLED BUTTON
+----------------------------------- */
+.btn-disabled {
+  background-color: $brand-gray;
+  color: #888888;
+  border: 1.5px solid #cccccc;
+  pointer-events: none;
+  :hover {
+    background-color: #bdbdbd;
+    color: #555555;
+  }
+}
